@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RDA Proyectos | Adecuación de Espacios</title>
+    <style>
+      :root {
+        --azul: #0f2a3d;
+        --rojo: #c62828;
+        --gris: #f4f6f8;
+        --texto: #1f1f1f;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        color: var(--texto);
+        background: #fff;
+      }
+      header {
+        background: linear-gradient(135deg, var(--azul), #163f5c);
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      header img {
+        height: 70px;
+      }
+      header h1 {
+        font-size: 28px;
+        letter-spacing: 1px;
+      }
+      header h1 span {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .hero {
+        padding: 80px 40px;
+        background: var(--gris);
+        text-align: center;
+      }
+      .hero h2 {
+        font-size: 42px;
+        margin-bottom: 16px;
+        color: var(--azul);
+      }
+      .hero p {
+        max-width: 800px;
+        margin: 0 auto 24px;
+        font-size: 18px;
+      }
+      .btn {
+        background: var(--rojo);
+        color: #fff;
+        padding: 14px 28px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 60px 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      section h3 {
+        font-size: 32px;
+        margin-bottom: 24px;
+        color: var(--azul);
+        text-align: center;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 24px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 24px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+      .card h4 {
+        margin-bottom: 10px;
+        color: var(--rojo);
+      }
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .about div {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      .contact {
+        background: var(--azul);
+        color: #fff;
+        text-align: center;
+        padding: 60px 40px;
+      }
+      footer {
+        background: #0b1e2b;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        .about {
+          grid-template-columns: 1fr;
+        }
+        header {
+          flex-direction: column;
+          gap: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <!-- Reemplaza src por la ruta de tu logo -->
+        <img src="LOGO PAG.png" alt="RDA Proyectos" />
+        <h1>RDA <span>RESICO</span></h1>
+      </div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Adecuación de Espacios y Proyectos en Tablaroca</h2>
+      <p>
+        En <strong>RDA Proyectos</strong> transformamos espacios comerciales,
+        residenciales e industriales con soluciones profesionales en tablaroca,
+        acabados y adecuaciones integrales.
+      </p>
+      <a href="#contacto" class="btn">Cotiza tu proyecto</a>
+    </section>
+
+    <section
+      id="servicios"
+      style="
+        background:
+          linear-gradient(
+            rgba(255, 255, 255, 0.007),
+            rgba(255, 255, 255, 0.637)
+          ),
+          url(&quot;COLLAGE.JPG&quot;);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      "
+    >
+      <h3>Nuestros Servicios</h3>
+      <div class="services">
+        <div class="card">
+          <h4>Tablaroca</h4>
+          <p>
+            Muros, plafones, divisiones y diseños personalizados con acabados de
+            alta calidad.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Adecuación de Espacios</h4>
+          <p>
+            Optimización y remodelación de espacios para oficinas, locales y
+            viviendas.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Proyectos Integrales</h4>
+          <p>
+            Planeación, ejecución y entrega de proyectos completos llave en
+            mano.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h3>Sobre la Empresa</h3>
+      <div class="about">
+        <div>
+          <p>
+            <strong>RDA Proyectos</strong> es una empresa dirigida por
+            <strong>Raúl Daniel De Alba Islas</strong>, especializada en
+            trabajos de tablaroca y adecuación de espacios.
+          </p>
+          <p>
+            Nos distinguimos por nuestro compromiso, puntualidad y calidad en
+            cada proyecto que realizamos.
+          </p>
+        </div>
+        <div>
+          <p><strong>Nombre fiscal:</strong> RDA <small>RESICO</small></p>
+          <p>
+            <strong>Enfoque:</strong> Soluciones profesionales y funcionales
+            para cada cliente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h3>Proyectos Realizados</h3>
+   
+      <div class="services">
+        
+        
+        <img
+          src="1.jpg"
+          alt="Proyecto 1"
+          style="width: 100%; border-radius: 10px"
+        />
+        <img
+          src="2.jpg"
+          alt="Proyecto 2"
+          style="width: 100%; border-radius: 10px"
+        />
+        <img
+          src="3.jpg"
+          alt="Proyecto 3"
+          style="width: 100%; border-radius: 10px"
+        />
+        <img
+          src="4.jpg"
+          alt="Proyecto 4"
+          style="width: 100%; border-radius: 10px"
+        />
+      </div>
+    </section>
+
+    <div style="margin-top:40px;text-align:center;">
+<p style="font-size:18px;font-weight:bold;margin-bottom:12px;">Trabajos realizados<br>Escanea aquí</p>
+<img src="QR trabajos.png" alt="QR Trabajos Realizados" style="max-width:200px;width:100%;margin:auto;display:block;">
+</div>
+</section>
+
+    <section id="qr" style="text-align: center; padding: 40px">
+      <h3>Escanea y Contáctanos</h3>
+      <img src="LOGO PAG 2.png" alt="logo 2" style="max-width: 450px" />
+      <img src="QR RDA.png" alt="QR RDA" style="max-width: 220px" />
+    </section>
+
+    <section id="contacto" class="contact">
+      <h3>Contacto</h3>
+      <p>Teléfono / WhatsApp:</p>
+      <h2>+52 33 3200 9139</h2>
+      <p>Solicita tu cotización sin compromiso</p>
+    </section>
+
+    <footer>
+      <p>© 2026 RDA Proyectos · Adecuación de Espacios</p>
+    </footer>
+  </body>
+</html>
